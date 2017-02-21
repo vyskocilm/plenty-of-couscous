@@ -1,0 +1,1 @@
+import itertools, sys; print "\n".join(("%s\t%s" % (cnt, key) for cnt, key in sorted(((len(list(g)), key) for key, g in itertools.groupby(sorted(l.split()[0] for l in open(sys.argv[1], "r")))), reverse=True)))
